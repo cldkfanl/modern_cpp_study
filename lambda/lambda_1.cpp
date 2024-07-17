@@ -27,8 +27,10 @@ int main(){
     //sort using lambda
     sort(dst.begin(), dst.end(), [](int a, int b) {return a > b;});
     //[] -> 외부 변수 없이
-    //(int a, int b) -> a,b를 받아서
-    //{return a > b;} -> a가 b보다 크면 true를 반환
+    //[&] -> 외부 범위의 모든 변수를 참조
+    //[=] -> 외부 범위의 모든 변수를 값으로
+    //(int a, int b) -> a,b를 받아서(매개변수 선언)
+    //{return a > b;} -> a가 b보다 크면 true를 반환(함수 작성부)
 
 
 

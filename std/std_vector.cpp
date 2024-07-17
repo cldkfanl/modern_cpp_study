@@ -10,7 +10,7 @@ int main(){
     for(int i=0; i<arr.size(); i++){
 
         // push_back
-        // dst.push_back(arr[i] * 2);
+        dst.push_back(arr[i] * 2);
 
 
 
@@ -18,7 +18,7 @@ int main(){
         dst.emplace_back(arr[i] * 2);
     }
 
-    for(int i=0; i<arr.size(); i++){
+    for(int i=0; i<dst.size(); i++){
         cout<<dst[i]<<" ";
     }
     cout<<"\n";
